@@ -1,8 +1,9 @@
-// Feel free to use, ignore or modify this code as you see fit
+// Use this function to get the data from the specific file.
+// Usage is getDataFromFile(fileName), which returns a Promise.
+const getDataFromFile = require("./getDataFromFile");
 
-function loadFile(name) {}
-
-function dayMinTempSpread(fileName) {
+// Feel free to use, ignore or modify the below code as you see fit
+async function dayMinTempSpread(fileName) {
   throw new Error("dayMinTempSpread not implemented!");
 }
 
@@ -10,4 +11,4 @@ function teamMinPointSpread(fileName) {
   throw new Error("teamMinPointSpread not implemented!");
 }
 
-module.exports = { loadFile, dayMinTempSpread, teamMinPointSpread };
+module.exports = { dayMinTempSpread, teamMinPointSpread };

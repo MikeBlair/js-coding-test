@@ -3,11 +3,11 @@
 const ct = require("../src/codingTest");
 
 describe("Coding Test", () => {
-  test("shows the day number with the smallest temperature spread", () => {
-    expect(ct.dayMinTempSpread("./data/weather.dat")).toBe("14");
+  test("shows the day number with the smallest temperature spread", async () => {
+    expect(await ct.dayMinTempSpread("weather.dat")).toBe("14");
   });
 
-  test("shows the name of the team with the smallest point differenc", () => {
-    expect(ct.teamMinPointSpread("./data/weather.dat")).toBe("Aston_Villa");
+  test("shows the name of the team with the smallest point differenc", async () => {
+    expect(await ct.teamMinPointSpread("football.dat")).toBe("Aston_Villa");
   });
 });
